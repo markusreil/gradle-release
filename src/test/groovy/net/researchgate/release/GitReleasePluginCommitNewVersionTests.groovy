@@ -70,7 +70,6 @@ class GitReleasePluginCommitNewVersionTests extends GitSpecification {
         when:
         BuildResult result = GradleRunner.create()
                 .withProjectDir(localDir)
-                .withGradleVersion('6.9.2')
                 .withArguments('commitNewVersion')
                 .withPluginClasspath()
                 .build()
@@ -103,7 +102,6 @@ class GitReleasePluginCommitNewVersionTests extends GitSpecification {
         when:
         BuildResult result = GradleRunner.create()
                 .withProjectDir(localDir)
-                .withGradleVersion('6.9.2')
                 .withArguments('commitNewVersion')
                 .withPluginClasspath()
                 .build()
@@ -138,7 +136,6 @@ class GitReleasePluginCommitNewVersionTests extends GitSpecification {
         when:
         BuildResult result = GradleRunner.create()
                 .withProjectDir(localDir)
-                .withGradleVersion('6.9.2')
                 .withArguments('commitNewVersion')
                 .withPluginClasspath()
                 .build()

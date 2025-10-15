@@ -8,8 +8,7 @@ buildscript {
     }
     dependencies {
         classpath 'nu.studer:gradle-plugindev-plugin:4.1'
-        classpath 'org.codehaus.groovy:groovy-backports-compat23:2.4.6'
-        classpath 'net.researchgate:gradle-release:2.7.0'
+        classpath 'org.codehaus.groovy:groovy-backports-compat23:3.0.8'
     }
 }
 
@@ -30,9 +29,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.spockframework:spock-core:2.1-groovy-2.5") { exclude group: 'org.codehaus.groovy' }
+    testImplementation("org.spockframework:spock-core:2.1-groovy-3.0") { exclude group: 'org.codehaus.groovy' }
     testImplementation "org.eclipse.jgit:org.eclipse.jgit:5.0.3.201809091024-r"
-    testImplementation "cglib:cglib-nodep:3.2.8"
     testImplementation gradleTestKit()
     testImplementation("org.junit.jupiter:junit-jupiter:5.7.1")
 
@@ -70,7 +68,7 @@ release {
     }
 }
 
-wrapper.gradleVersion = '6.9.2'
+wrapper.gradleVersion = '7.6.6'
 
 updateVersion.doFirst {
     def file = file('README.md')

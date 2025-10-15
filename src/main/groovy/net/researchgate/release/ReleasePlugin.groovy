@@ -33,7 +33,6 @@ import org.gradle.api.plugins.BasePlugin
 import org.gradle.api.provider.ProviderFactory
 import org.gradle.api.tasks.GradleBuild
 import org.gradle.api.tasks.TaskState
-import org.gradle.build.event.BuildEventsListenerRegistry
 import org.gradle.tooling.events.OperationCompletionListener
 import org.gradle.tooling.events.task.TaskFailureResult
 import org.gradle.util.GradleVersion

@@ -60,7 +60,6 @@ class GitReleasePluginCheckCommitNeededTests extends GitSpecification {
         when:
         BuildResult result = GradleRunner.create()
             .withProjectDir(localDir)
-            .withGradleVersion('6.9.2')
             .withArguments('checkCommitNeeded')
             .withPluginClasspath()
             .buildAndFail()
@@ -78,7 +77,6 @@ class GitReleasePluginCheckCommitNeededTests extends GitSpecification {
         when:
         BuildResult result = GradleRunner.create()
                 .withProjectDir(localDir)
-                .withGradleVersion('6.9.2')
                 .withArguments('checkCommitNeeded')
                 .withPluginClasspath()
                 .buildAndFail()
@@ -96,7 +94,6 @@ class GitReleasePluginCheckCommitNeededTests extends GitSpecification {
         when:
         BuildResult result = GradleRunner.create()
                 .withProjectDir(localDir)
-                .withGradleVersion('6.9.2')
                 .withArguments('checkCommitNeeded')
                 .withPluginClasspath()
                 .buildAndFail()
@@ -114,7 +111,6 @@ class GitReleasePluginCheckCommitNeededTests extends GitSpecification {
         when:
         BuildResult result = GradleRunner.create()
                 .withProjectDir(localDir)
-                .withGradleVersion('6.9.2')
                 .withArguments('checkCommitNeeded')
                 .withPluginClasspath()
                 .buildAndFail()

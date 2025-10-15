@@ -58,7 +58,6 @@ class GitReleasePluginMultiProjectTests extends GitSpecification {
         when:
         BuildResult result = GradleRunner.create()
                 .withProjectDir(localDir)
-                .withGradleVersion('6.9.2')
                 .withArguments('checkUpdateNeeded')
                 .withPluginClasspath()
                 .build()
@@ -73,7 +72,6 @@ class GitReleasePluginMultiProjectTests extends GitSpecification {
         when:
         BuildResult result = GradleRunner.create()
                 .withProjectDir(localDir)
-                .withGradleVersion('6.9.2')
                 .withArguments('checkUpdateNeeded')
                 .withPluginClasspath()
                 .buildAndFail()
